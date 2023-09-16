@@ -17,8 +17,6 @@
     </header>
 
     <main>
-
-        <!--// LEFT DEX  -->
         <section class="pokeDex_container_wrap_left">
             <section class="pokeDex_container_left">
                 <section class="btn_lights">
@@ -57,16 +55,29 @@
                             <button class="search_box_btn3"></button>
                         </section>
                         <form action="pokemon.html" class="searchForm" autocomplete="off">
+
+                            <!-- <button class="name">Name</button>
+                                <button class="types">Type</button>
+                                <button class="ability">Ability</button> -->
+
+                            <select name="options" id="options">
+                                <option value="name">Name</option>
+                                <option value="type">Types</option>
+                                <option value="ability">Abilities</option>
+                            </select>
+
                             <input type="search" list="pokemons" name="name" class="pokemon_search">
                             <datalist id="pokemons">
                             </datalist>
-                            <button type="submit">Søg</button>
+                            <button type="submit" class="submit">Søg</button>
                         </form>
                     </section>
                     <img src="img/button.png" alt="pokeButton" class="poke_btn">
                 </section>
             </section>
         </section>
+
+
 
         <section class="pokeDex_container_wrap_right2">
             <section class="pokeDex_container_wrap_right">
